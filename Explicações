@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explicações em Marinhais | Apoio Escolar Personalizado</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fb;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 30px;
+      background: white;
+      color: #4f46e5;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #4f46e5;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      color: #4f46e5;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about div {
+      font-size: 1.05rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .prices {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .price-card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .price {
+      font-size: 2.5rem;
+      color: #4f46e5;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background: #4f46e5;
+      color: white;
+    }
+
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      display: grid;
+      gap: 15px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    input, select, textarea, button {
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #4338ca;
+    }
+
+    footer {
+      background: #1f2933;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Explicações em Marinhais</h1>
+  <p>Apoio escolar individual e personalizado do 1.º ao 12.º ano. Resultados reais, acompanhamento contínuo e foco no sucesso do aluno.</p>
+  <a href="#marcacao" class="btn-primary">Marcar Explicação</a>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#precos">Preços</a>
+  <a href="#horarios">Horários</a>
+  <a href="#marcacao">Marcação</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre</h2>
+  <div class="about">
+    <div>
+      <p>Explicadora localizada em <strong>Marinhais</strong>, com experiência em apoio escolar e preparação para testes e exames nacionais. Acompanhamento próximo e adaptado ao ritmo de cada aluno.</p>
+    </div>
+    <div>
+      <p>As explicações podem ser individuais ou em pequenos grupos, presenciais ou online, sempre com foco na evolução contínua do aluno.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="services">
+    <div class="card">📘 Apoio ao Estudo</div>
+    <div class="card">🧮 Matemática</div>
+    <div class="card">📐 Físico-Química</div>
+    <div class="card">📖 Português</div>
+    <div class="card">🎓 Preparação para Exames</div>
+    <div class="card">💻 Explicações Online</div>
+  </div>
+</section>
+
+<section id="precos">
+  <h2>Preços</h2>
+  <div class="prices">
+    <div class="price-card">
+      <h3>Aula Individual</h3>
+      <div class="price">15€/hora</div>
+      <p>Acompanhamento totalmente personalizado.</p>
+    </div>
+    <div class="price-card">
+      <h3>Pacote Mensal</h3>
+      <div class="price">55€</div>
+      <p>4 aulas por mês com desconto.</p>
+    </div>
+    <div class="price-card">
+      <h3>Grupo (2–3 alunos)</h3>
+      <div class="price">10€/hora</div>
+      <p>Valor por aluno.</p>
+    </div>
+  </div>
+</section>
+
+<section id="horarios">
+  <h2>Horários</h2>
+  <table>
+    <tr><th>Dia</th><th>Horário</th></tr>
+    <tr><td>Segunda a Quinta</td><td>15h – 19h</td></tr>
+    <tr><td>Sexta</td><td>15h – 18h</td></tr>
+    <tr><td>Sábado</td><td>Sob marcação</td></tr>
+  </table>
+</section>
+
+<section id="marcacao">
+  <h2>Marcar Explicação</h2>
+  <form onsubmit="enviar(event)">
+    <input type="text" placeholder="Nome do aluno" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Telefone" required>
+    <select required>
+      <option value="">Disciplina</option>
+      <option>Matemática</option>
+      <option>Português</option>
+      <option>Físico-Química</option>
+    </select>
+    <input type="date" required>
+    <textarea placeholder="Mensagem adicional"></textarea>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</section>
+
+<footer>
+  <p>📍 Marinhais, Santarém</p>
+  <p>📞 9XX XXX XXX | ✉️ explicacoes@exemplo.pt</p>
+  <p>© 2025 Explicações em Marinhais</p>
+</footer>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("OADbaRrYaf8WSnuwM");
+  })();
+
+  function enviar(e) {
+    e.preventDefault();
+
+    const params = {
+      nome: e.target[0].value,
+      email: e.target[1].value,
+      telefone: e.target[2].value,
+      disciplina: e.target[3].value,
+      data: e.target[4].value
+    };
+
+    emailjs.send("service_q0gkelc", "template_33mpox6", params)
+      .then(function() {
+        alert("Explicação marcada com sucesso. Confirmação enviada por email.");
+        e.target.reset();
+      }, function(error) {
+        alert("Erro ao enviar email. Tenta novamente.");
+        console.log(error);
+      });
+  }
+</script>
+
+</body>
+</html>
